@@ -9,6 +9,7 @@ public class FileHandler {
 
     private static final String FILE_NAME = "giftList.txt";
 
+    //File reading method
     public static void loadGiftList(ArrayList<Gift> giftList) {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;
@@ -20,6 +21,7 @@ public class FileHandler {
         }
     }
 
+    //File writing method
     public static void saveGiftList(ArrayList<Gift> giftList) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
             for (Gift gift : giftList) {
