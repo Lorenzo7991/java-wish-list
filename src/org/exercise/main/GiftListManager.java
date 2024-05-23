@@ -47,5 +47,6 @@ public class GiftListManager {
 
         //Saving sorted list to text file
         GiftFileHandler.saveGiftList(giftList);
+
     }
 }
