@@ -5,7 +5,7 @@ import org.exercise.model.Gift;
 import java.io.*;
 import java.util.ArrayList;
 
-public class FileHandler {
+public class GiftFileHandler {
 
     private static final String FILE_NAME = "giftList.txt";
 

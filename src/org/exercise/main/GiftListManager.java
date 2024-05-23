@@ -1,6 +1,6 @@
 package org.exercise.main;
 
-import org.exercise.utility.FileHandler;
+import org.exercise.utility.GiftFileHandler;
 import org.exercise.model.Gift;
 
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ public class GiftListManager {
         ArrayList<Gift> giftList = new ArrayList<>();
 
         //Loading list from file
-        FileHandler.loadGiftList(giftList);
+        GiftFileHandler.loadGiftList(giftList);
 
         //Initializing scanner obj
         Scanner scanner = new Scanner(System.in);
@@ -46,6 +46,6 @@ public class GiftListManager {
         }
 
         //Saving sorted list to text file
-        FileHandler.saveGiftList(giftList);
+        GiftFileHandler.saveGiftList(giftList);
     }
 }
